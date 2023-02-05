@@ -1,4 +1,4 @@
 export const config = {
     api: "https://urlshortening-app.onrender.com",
-    client: "http://localhost:3000"
+    client: "https://resilient-alfajores-4a4f33.netlify.app"
 }
