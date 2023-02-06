@@ -81,9 +81,9 @@ function CreateLink() {
             label="shorturl"
             className="form-control form-control-user mb-2"
             name={'shorturl'}
-            value={`${config.client}/short/${userContextData.shorturl}`}
+            value={`${config.client}/${userContextData.shorturl}`}
 
-          /><CopyToClipboard text={`${config.client}/short/${userContextData.shorturl}`}><Button type="submit" variant="contained">
+          /><CopyToClipboard text={`${config.client}/${userContextData.shorturl}`}><Button type="submit" variant="contained">
             copy
           </Button></CopyToClipboard></> : null}
       </div>

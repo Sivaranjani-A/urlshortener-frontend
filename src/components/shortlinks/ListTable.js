@@ -36,7 +36,7 @@ export default function ListTable({ rows, columns }) {
                 {row.longurl}
               </TableCell>
               <TableCell component="th" scope="row">
-                {`${config.client}/short/${row.shorturl}`}
+                {`${config.client}/${row.shorturl}`}
               </TableCell>
               <TableCell align="right">{row.clickedcount}</TableCell>
 

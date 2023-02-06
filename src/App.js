@@ -37,7 +37,7 @@ function App() {
             <Route path="shortlink" element={<CreateLink />} />
             <Route path="listurl" element={<ListUrl />} />
           </Route>
-          <Route path="/short/:userid" element={<Urldirect />} />
+          <Route path="/:userid" element={<Urldirect />} />
 
 
         </Routes>
