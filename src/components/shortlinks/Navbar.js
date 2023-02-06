@@ -11,6 +11,7 @@ function Navbar() {
     if (window.confirm("Do you really want to Logout?")) {
       try {
         localStorage.removeItem('token');
+        localStorage.removeItem('email');
         navigate('/');
       } catch (error) {
         console.log(error);
