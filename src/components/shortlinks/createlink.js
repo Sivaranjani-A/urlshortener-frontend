@@ -13,7 +13,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 function CreateLink() {
   const userContextData = useContext(UserContext);
 
-  let mail = userContextData.mailid;
+  let mail = localStorage.getItem('email');
 
   const { values, touched, errors, handleChange, handleBlur, handleSubmit, resetForm } = useFormik({
     initialValues: {

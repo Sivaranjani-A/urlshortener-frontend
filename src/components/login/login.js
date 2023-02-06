@@ -13,7 +13,7 @@ import UserContext from "../../context/UserContext";
 export function Login() {
 
     const navigate = useNavigate();
-    const userContextData = useContext(UserContext);
+
 
     const { values, touched, errors, handleChange, handleBlur, handleSubmit } =
         useFormik({
@@ -29,10 +29,9 @@ export function Login() {
                 try {
                     const users = await axios.post(`${config.api}/user/login`, values);
 
-                    userContextData.setmailid(users.data.email)
-
                     if (users.data.token) {
                         localStorage.setItem('token', users.data.token);
+                        localStorage.setItem('email', users.data.email);
                         toast.success(users.data.message)
 
                         navigate('/Portal/shortlink');

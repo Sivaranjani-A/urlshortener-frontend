@@ -7,8 +7,8 @@ import UserContext from '../../context/UserContext';
 import ListTable from "./ListTable";
 
 function ListUrl() {
-  const userContextData = useContext(UserContext);
-  let mail = userContextData.mailid;
+
+  let mail = localStorage.getItem('email');;
 
   const initialRows = [
 
